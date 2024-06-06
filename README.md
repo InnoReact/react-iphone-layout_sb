@@ -1,2 +1,3 @@
-# react-iphone-layout_sb
+# React-iPhone-Layout_SB
+
 📖 StoryBook by iPhone layout
