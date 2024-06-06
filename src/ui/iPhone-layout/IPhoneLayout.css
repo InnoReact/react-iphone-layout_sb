@@ -1,0 +1,51 @@
+.ril-root {
+  height: 100%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ril-iphone {
+  position: relative;
+
+  background-image: url("./assets/iPhone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  aspect-ratio: 256 / 538;
+  height: var(--iphone-size);
+  rotate: var(--iphone-mode);
+
+  transition: rotate 1.5s;
+}
+
+.ril-client-area {
+  position: absolute;
+  bottom: 9.17%;
+  left: 3.2%;
+  right: 2.65%;
+  top: 10.3%;
+
+  z-index: 32;
+  background-color: #fff;
+
+  overflow-x: hidden;
+}
+
+.ril-status-bar {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+
+  z-index: 9999;
+  position: sticky;
+  top: 0;
+}
