@@ -31,20 +31,10 @@ const Template: StoryFn<IPhoneLayoutProps> = (args) => (
   </IPhoneLayout>
 );
 
-export const Default = Template.bind({});
-Default.args = {
+export const IPhoneMode = Template.bind({});
+IPhoneMode.args = {
   isStatusBar: true,
   position: 'right',
-  mode: 'iPhone',
-  minSize: 60,
-  defaultSize: 75,
-  maxSize: 100,
-};
-
-export const WithoutStatusBar = Template.bind({});
-WithoutStatusBar.args = {
-  isStatusBar: false,
-  position: 'bottom',
   mode: 'iPhone',
   minSize: 60,
   defaultSize: 75,
@@ -56,6 +46,16 @@ LaptopMode.args = {
   isStatusBar: true,
   position: 'right',
   mode: 'laptop',
+  minSize: 60,
+  defaultSize: 75,
+  maxSize: 100,
+};
+
+export const WithoutStatusBar = Template.bind({});
+WithoutStatusBar.args = {
+  isStatusBar: false,
+  position: 'bottom',
+  mode: 'iPhone',
   minSize: 60,
   defaultSize: 75,
   maxSize: 100,
