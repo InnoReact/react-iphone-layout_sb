@@ -31,10 +31,9 @@ jobs:
         run: npm ci
 
       - name: Publish to chromatic
-        id: chromatic
-        uses: chromaui/action@v1
+        uses: chromaui/action@latest
         with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: comment PR
