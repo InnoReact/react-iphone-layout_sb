@@ -38,6 +38,7 @@ jobs:
         run: npm ci
 
       - name: Publish to chromatic
+        id: chromatic
         uses: chromaui/action@latest
         with:
           projectToken: ${{ secrets.CHROMATIC_TOKEN }}
