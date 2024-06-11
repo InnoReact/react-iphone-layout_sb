@@ -50,13 +50,3 @@ LaptopMode.args = {
   defaultSize: 75,
   maxSize: 100,
 };
-
-export const WithoutStatusBar = Template.bind({});
-WithoutStatusBar.args = {
-  isStatusBar: false,
-  position: 'bottom',
-  mode: 'iPhone',
-  minSize: 60,
-  defaultSize: 75,
-  maxSize: 100,
-};
